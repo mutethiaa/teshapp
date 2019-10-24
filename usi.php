@@ -237,6 +237,5 @@ function onClick(element) {
             
 </body>
 
-<!-- Mirrored from www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_gallery by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:52 GMT -->
-</html> 
+
 
