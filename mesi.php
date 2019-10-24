@@ -11,6 +11,16 @@ require('server.php');
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<meta charset="utf-8">
+<title>message  <?php echo $row['$id'];?></title>
+<link rel="stylesheet" href="css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
+<script>
+
+
+</head>
 
 <style>
 
@@ -239,9 +249,6 @@ $row = $re->fetch_assoc();
    <?php  if (isset($_SESSION['name'])) : ?>
       
       <a href="index.php?logout='1'" style="color: red;">logout</a> 
-    
- 
-    
     <?php endif ?>
  
 
@@ -251,12 +258,6 @@ $row = $re->fetch_assoc();
   
 
       </a> </p>
-
-      
-
-    
-    
-
 <div class="content">
 
 
@@ -278,22 +279,6 @@ $id=$_REQUEST['recip'];
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>message  <?php echo $row['$id'];?></title>
-<link rel="stylesheet" href="css/style.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/jquery.min.js"></script>
-
-
-</head>
-<body>
-
-
 
 <?php
 $status = "";
@@ -431,8 +416,7 @@ else{
 </style>
 <!-- where the response will be displayed -->
 <div id='response'></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
-<script>
+
 $(document).ready(function(){
 $('#userForm').submit(function(){
 
