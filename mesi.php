@@ -320,10 +320,6 @@ else {
 <div id="mik">
   <div id="misero">
 
-
-
-
-
 <?php
 
 /*
@@ -332,9 +328,6 @@ else {
 //$l=$row['recip'];
 //$id=$_REQUEST['recip'];
 $q=$_SESSION['username'];
-
-
-
 
 $query = "SELECT author,recip,message,time from messages where author='$q' or recip='$q' ";
 
@@ -448,16 +441,6 @@ return false;
 });
 });
 </script>
-
-
-
-
-
-
-
-
-
-	
 
 <script>
 $(document).ready(function(){
